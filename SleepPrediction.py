@@ -146,7 +146,7 @@ class StreamlitUI:
         st.sidebar.title('Please enter the following: ')
         screen_time_phone = st.sidebar.number_input('Average Daily Screen time of phone/tablet (hours)', min_value=0.0, max_value=24.0, value=6.0, step=0.1)
         screen_time_laptop = st.sidebar.number_input('Average Daily Screen time of laptop/computer (hours)', min_value=0.0, max_value=24.0, value=6.0, step=0.1)
-        step_count_1 = st.sidebar.number_input('Average Daily Step count', min_value=0, max_value=100000, value=9000, step=100)
+        step_count_1 = st.sidebar.number_input('Average Daily Step count', min_value=0, max_value=60000, value=9000, step=100)
         screen_content_1 = st.sidebar.selectbox('Screen content (what you watched within 2 hours before sleeping)',
                                                 ['Relaxing / Meditative Content', 'Educational Content', 'Social Media', 'News'])
         return screen_time_phone, screen_time_laptop, step_count_1, screen_content_1
