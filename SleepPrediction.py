@@ -23,7 +23,12 @@ class SleepScorePredictor:
         mae = mean_absolute_error(y_test, y_pred)
         mse = mean_squared_error(y_test, y_pred)
         rmse = np.sqrt(mse)
-
+        # Format the metrics to 5 decimal places
+        r2 = format(r2, ".5f")
+        mae = format(mae, ".5f")
+        mse = format(mse, ".5f")
+        rmse = format(rmse, ".5f")
+        
         return r2, mae, mse, rmse
 
     @staticmethod
@@ -181,7 +186,10 @@ class StreamlitUI:
         predicted_sleep_score = sleep_app.predict_sleep_score(total_screen_time, screen_content, step_count, model, scaler_loaded, model_selection)
 
         #if st.sidebar.button('Predict Sleep Score'):
-        st.write(f"**Predicted Sleep Score:** {predicted_sleep_score}")
+        if predicted_sleep_score < 0:
+            st.write("Invalid input parameters provided by user. Please re-enter the input values.")
+        else:
+            st.write(f"**Predicted Sleep Score (0-100):** {predicted_sleep_score}")
 
         #if st.button('View Model Evaluation Metrics'):
         #    r2, mae, mse, rmse = sleep_app.evaluate_model(model, model_selection, X_test, X_test_scaled, y_test)
@@ -223,8 +231,9 @@ class StreamlitUI:
         if predicted_sleep_score is None:
             st.write("Please make a prediction in the Prediction tab first.")
             return
-
-        if predicted_sleep_score < 60:
+        if predicted_sleep_score < 0:
+            st.write("Invalid input parameters provided by user. Please re-enter the input values.")
+        elif predicted_sleep_score < 60:
 
 
             if total_screen_time > 0:
