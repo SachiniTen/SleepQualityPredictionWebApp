@@ -276,7 +276,7 @@ def main():
 
     with tabs[0]:
         model_selection = st.selectbox('Select Regression Model',
-                                       ['Linear Regression', 'Random Forest Regression', 'Decision Tree Regression',
+                                     ['Random Forest Regression', 'Linear Regression', 'Decision Tree Regression',
                                         'KNN Regression', 'SVM Regression'], index=0, key='model_select',
                                        format_func=lambda x: ' ' * 5 + x)
         st.markdown("""
