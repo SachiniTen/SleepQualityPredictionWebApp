@@ -79,7 +79,7 @@ class RecommendationEngine:
                 print("-------------------------------------")
                 print("\n")
                 if new_score >= 60:
-                    return f"User should decrease his screen time by {iterations + 1} hours in order to improve his sleep quality to the fair sleep score range (above or equal to 60)."
+                    return f"💡User should decrease his screen time by {iterations + 1} hours in order to improve his sleep quality to the fair sleep score range (above or equal to 60)."
                 iterations += 1
 
             return "Unable to reach the target sleep score with reasonable screen time reduction."
@@ -108,7 +108,7 @@ class RecommendationEngine:
                 print("-------------------------------------")
                 print("\n")
                 if new_score_1 >= 60:
-                    return f"User should increase his step count by {iterations + 100} steps in order to improve his sleep quality to the fair sleep score range (above or equal to 60)."
+                    return f"💡User should increase his step count by {iterations + 100} steps in order to improve his sleep quality to the fair sleep score range (above or equal to 60)."
                 iterations += 100
 
             return "Unable to reach the target sleep score with a reasonable step count increase."
@@ -137,7 +137,7 @@ class RecommendationEngine:
                     print("\n")
 
                     recommendations.append(
-                        f"Switching to {content} content may change the sleep score to {new_score}.\n")
+                        f"💡Switching to {content} content may change the sleep score to {new_score}.\n")
 
             if recommendations:
                 return "\n".join(recommendations)
