@@ -296,7 +296,7 @@ def main():
     custom_css = """
     <style>
     .sidebar .sidebar-content {
-        background-color: #251c52;
+        background-color: #D8E5F7;
         color: #262730;
     }
     </style>
