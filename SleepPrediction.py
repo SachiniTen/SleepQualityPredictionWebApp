@@ -239,7 +239,7 @@ def main():
         unsafe_allow_html=True)
 
     st.markdown(
-        f"<span style='color:black;'>This web application predicts the sleep quality score of youth aged(13-30) based on their avergae daily screen time(phone/tablet), average daily screen time(laptop/computer), screen content(what they watched 2 hours before going to bed) and average daily step count</span>",
+        f"<span style='color:black;'>This web application predicts the sleep quality score of youth aged(13-30) based on their avergae daily screen time(phone/tablet), average daily screen time(laptop/computer), screen content(what they watched before going to bed) and average daily step count</span>",
         unsafe_allow_html=True)
     screen_time_phone, screen_time_laptop, step_count_1, screen_content_1 = ui.display_sidebar_inputs()
 
