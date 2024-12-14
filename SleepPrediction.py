@@ -233,7 +233,7 @@ class StreamlitUI:
                                                                                             model_selection)
             st.sidebar.write(recommendation_3)
         else:
-            st.sidebar.success("No recommendations needed as the sleep quality score is within the fair sleep score range (60 or above)")
+            st.sidebar.success("No recommendations needed as the sleep quality score is within the fair sleep score range")
 
 
 def main():
