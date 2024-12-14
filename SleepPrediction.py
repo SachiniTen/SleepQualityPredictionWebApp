@@ -90,7 +90,7 @@ class RecommendationEngine:
             max_iterations1 = 10000
             iterations = 0
 
-            while current_step_count > 0 and iterations < max_iterations1 and current_step_count < 11000:
+            while current_step_count > 0 and iterations < max_iterations1 and current_step_count < 110000:
                 current_step_count += increment
                 new_score_1 = SleepScorePredictor.predict_sleep_score(screentime, screen_content, current_step_count,
                                                                       model, scaler, model_nm)
