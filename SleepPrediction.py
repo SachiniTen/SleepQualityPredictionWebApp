@@ -72,12 +72,12 @@ class RecommendationEngine:
                 print("------------- end ---------------------")
                 print("\n")
                 if new_score >= 60:
-                    return f"💡User should decrease the screen time by {iterations + 1} hours in order to improve the sleep quality to the fair sleep score range (above or equal to 60)."
+                    return f"💡User should decrease the screen time by {iterations + 1} hours in order to improve the sleep quality to the fair sleep score range."
                 iterations += 1
 
             return "Unable to reach the target sleep score with reasonable screen time reduction."
         else:
-            return "No recommendations needed as the sleep quality score is within the fair sleep score range (60 or above)"
+            return "No recommendations needed as the sleep quality score is within the fair sleep score range"
 
     @staticmethod
     def generate_recommendations_stepcount(predicted_score, screentime, screen_content, current_step_count, model,
@@ -104,12 +104,12 @@ class RecommendationEngine:
                 print("------------- end ----------------")
                 print("\n")
                 if new_score_1 >= 60:
-                    return f"💡User should increase the step count by {iterations + 100} steps in order to improve the sleep quality to the fair sleep score range (above or equal to 60)."
+                    return f"💡User should increase the step count by {iterations + 100} steps in order to improve the sleep quality to the fair sleep score range."
                 iterations += 100
 
             return "Unable to reach the target sleep score with a reasonable step count increase."
         else:
-            return "No recommendations needed as the sleep quality score is within the fair sleep score range (60 or above)"
+            return "No recommendations needed as the sleep quality score is within the fair sleep score range"
 
     @staticmethod
     def generate_recommendations_screencontent(predicted_score, screentime, current_screen_content, step_count, model,
@@ -144,7 +144,7 @@ class RecommendationEngine:
                 return "Unable to reach the target sleep score with reasonable screen content changes."
 
         else:
-            return "No recommendations needed as the sleep quality score is within the fair sleep score range (60 or above)."
+            return "No recommendations needed as the sleep quality score is within the fair sleep score range."
 
 
 class StreamlitUI:
