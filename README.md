@@ -71,7 +71,7 @@ This will open the web application in your default web browser.
 ```plaintext
 ├── SleepPrediction.py    # Main application file
 ├── requirements.txt      # List of required libraries
-├── models/               # Directory containing trained machine learning models
+├── models_final/         # Directory containing trained machine learning models
 └── README.md             # Project documentation
 ```
 
@@ -81,13 +81,6 @@ This will open the web application in your default web browser.
 1. Input your daily screen time , type of content watched, and step count into the form.
 2. Click on 'Predict Sleep Quality Score' toView the predicted sleep quality score.
 4. If the score is below 60, click on the 'View Recommendations' button to view the personalized recommendations provided.
-
-
----
-
-## Troubleshooting
-- **Dependencies Not Installing**: Ensure you are using Python 3.9 or higher and activate your virtual environment before running `pip install`.
-- **Streamlit App Not Launching**: Verify that all libraries are installed and the file path to `SleepPrediction.py` is correct.
 
 
 ---
