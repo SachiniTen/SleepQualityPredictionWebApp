@@ -71,7 +71,7 @@ This will open the web application in your default web browser.
 ```plaintext
 ├── SleepPrediction.py    # Main application file
 ├── requirements.txt      # List of required libraries
-├── models_final/         # Directory containing trained machine learning models
+├── models_final/         # Directory containing trained machine learning models which were trained using 2313071.Code.zip -> Sleep_Quality_Prediction_Model.ipynb
 └── README.md             # Project documentation
 ```
 
