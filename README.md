@@ -8,6 +8,7 @@ This Streamlit web application predicts the sleep quality score (1-100) for yout
 If the predicted sleep score falls below 60 (indicating poor sleep quality), the application generates personalized recommendations to improve sleep quality.
 
 Web app: https://sleepqualitypredictionwebapp.streamlit.app/
+
 Source code: https://github.com/SachiniTen/SleepQualityPredictionWebApp/
 
 ---
