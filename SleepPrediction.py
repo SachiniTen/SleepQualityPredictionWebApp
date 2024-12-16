@@ -231,7 +231,7 @@ class StreamlitUI:
                                                                                         screen_content, step_count,
                                                                                        model, scaler, model_selection)
             st.sidebar.write(recommendation_2)
-            st.sidebar.write('\n\n\n')
+            st.sidebar.write('\n\n')
             st.sidebar.write('💡How does changing the screen content affect your sleep quality?')
             
             recommendation_3 = recommendation_engine.generate_recommendations_screencontent(predicted_score,
