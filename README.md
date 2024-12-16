@@ -17,8 +17,8 @@ Source code: https://github.com/SachiniTen/SleepQualityPredictionWebApp/
 ## Features
 - **Input Form**: Users can input screen time, screen content, and daily step count.
 - **Prediction**: Predicts the sleep quality score using machine learning regression models.
-- **Personalized Recommendations**: Provides actionable tips when the predicted score is below 60.
-- **Evaluation Metrics**: Displays model evaluation metrics like R², MAE, MSE, and RMSE.
+- **Personalized Recommendations**: Provides actionable recommendation when the predicted score is below 60.
+
 
 
 ## Installation Guide
