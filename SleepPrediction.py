@@ -3,6 +3,9 @@ import streamlit as st
 import pandas as pd
 import joblib
 
+
+
+
 class SleepScorePredictor:
     """
         Class responsible for loading models and predicting sleep scores.
@@ -208,6 +211,8 @@ class StreamlitUI:
         if 'predicted_sleep_score' not in st.session_state:
             st.sidebar.error("Please predict the sleep quality score first.")
             st.stop()
+            return 'Please predict the sleep quality score first.'
+
 
         predicted_score = st.session_state.predicted_sleep_score
         total_screen_time, screen_content, step_count, model, scaler, model_selection = st.session_state.prediction_details
