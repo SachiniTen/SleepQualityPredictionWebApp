@@ -139,7 +139,7 @@ class RecommendationEngine:
                     print("\n")
                     
                     recommendations.append(
-                        f"•      Switching to {content} may change the sleep score to {new_score}.\n")
+                        f"• Switching to {content} may change the sleep score to {new_score}.\n")
 
             if recommendations:
                 return "\n".join(recommendations)
@@ -231,9 +231,9 @@ class StreamlitUI:
                                                                                         screen_content, step_count,
                                                                                        model, scaler, model_selection)
             st.sidebar.write(recommendation_2)
-            st.sidebar.write('\n\n')
+            st.sidebar.write('\n\n\n')
             st.sidebar.write('💡How does changing the screen content affect your sleep quality?')
-            st.sidebar.write('\t')
+            
             recommendation_3 = recommendation_engine.generate_recommendations_screencontent(predicted_score,
                                                                                             total_screen_time,
                                                                                             screen_content, step_count,
