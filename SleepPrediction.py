@@ -139,7 +139,7 @@ class RecommendationEngine:
                     print("\n")
 
                     recommendations.append(
-                        f"\t       • Switching to {content} may change the sleep score to {new_score}.\n")
+                        f"\t 1      • Switching to {content} may change the sleep score to {new_score}.\n")
 
             if recommendations:
                 return "\n".join(recommendations)
