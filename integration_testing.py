@@ -6,7 +6,7 @@ import joblib
 class TestSleepScorePredictionIntegration(unittest.TestCase):
     def setUp(self):
         # Load a sample model and scaler for testing
-        self.model = joblib.load('models_final/ridge_pipeline.pkl')
+        self.model = joblib.load('models_final/best_knn_model.pkl')
         self.scaler = joblib.load('models_final/scaler.pkl')
         self.sleep_score_predictor = SleepScorePredictor()
         self.recommendation_engine = RecommendationEngine()
